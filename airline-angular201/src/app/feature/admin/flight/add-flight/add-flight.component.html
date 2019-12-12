@@ -1,0 +1,88 @@
+<mat-card class="mat-elevation-z8">
+  <div class="heading">
+    <span><h4>Add Flights</h4></span>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="container">
+    <form [formGroup]="flightForm">
+      <mat-form-field class="normal-input-width">
+        <input
+          matInput
+          placeholder="Flight No."
+          type="text"
+          formControlName="flightNumber"
+        />
+      </mat-form-field>
+      <mat-form-field class="normal-input-width">
+        <input
+          matInput
+          placeholder="Flight Name."
+          type="text"
+          formControlName="flightName"
+        />
+      </mat-form-field>
+      <mat-form-field class="normal-input-width">
+        <input
+          matInput
+          placeholder="Airlines"
+          type="text"
+          formControlName="airlineCompany"
+        />
+      </mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="Source."
+          type="text"
+          formControlName="source"
+        />
+      </mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="Destination"
+          type="text"
+          formControlName="destination"
+        />
+      </mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="Arrival Time"
+          type="time"
+          formControlName="sourceStartTime"
+        />
+      </mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="Departure Time"
+          type="time"
+          formControlName="destinationReachTime"
+        />
+      </mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="Price"
+          type="number"
+          formControlName="ticketprice"
+      /></mat-form-field>
+      <mat-form-field class="small-input-width">
+        <input
+          matInput
+          placeholder="No. of Seats"
+          type="number"
+          formControlName="noOfSeats"
+        />
+      </mat-form-field>
+    </form>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="footer">
+    <button type="reset" mat-raised-button class="footer-button">
+      Cancel
+    </button>
+    <button mat-raised-button class="footer-button">Submit</button>
+  </div>
+</mat-card>
